@@ -21,9 +21,11 @@ public class LoginPage {
 
      public WebElement Username(){return driver.findElement(username);}
         public WebElement Password(){return driver.findElement(Password);}
+    public WebElement Password2(){return driver.findElement(Password);}
 
 
-       public void UsernameField(String Lesson) {
+
+    public void UsernameField(String Lesson) {
           Username().sendKeys(Lesson);
             Username().sendKeys(Keys.ENTER);
        }
